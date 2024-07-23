@@ -1,0 +1,25 @@
+{% extends "base_navbar.html" %}
+
+{% block title %}About Me - SwiftSell{% endblock %}
+
+{% block head_extra %}
+    <!-- Additional styles specific to the About Me page -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/aboutme_style.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>About Me</h1>
+        <p>Welcome to my personal page! Here you'll find information about my background, experience, and projects.</p>
+        <!-- More content here -->
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <!-- Custom footer for About Me page if necessary, or leave to inherit from base -->
+    <footer class="footer">
+        <div class="container text-center">
+            &copy; 2024 SFSU Software Engineering Class - Team 4. All Rights Reserved.
+        </div>
+    </footer>
+{% endblock %}

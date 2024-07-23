@@ -1,0 +1,116 @@
+/* Base page styling */
+body {
+    background-color: white !important;
+    color: #212529;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header style */
+.header {
+    text-align: left !important;
+    padding: 1rem !important;
+    font-size: 1.25rem !important;
+    color: black !important;
+    margin-bottom: 1rem !important;
+}
+
+/* Card styling for content blocks */
+.card {
+    background-color: #ffffff !important;
+    border-radius: 20px !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+    margin: 1rem !important;
+    width: auto !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 2rem !important;
+}
+
+/* Content within cards */
+.card-body {
+    padding: 2rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+/* Descriptive text and button styling */
+.about-text {
+    font-size: 1.5rem !important;
+    line-height: 1.8 !important;
+    margin-bottom: 2rem !important;
+}
+
+.contact-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #a9a9a9 !important;
+}
+
+/* Ensuring content is centrally aligned */
+.centered-content {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 100vh !important;
+    flex-direction: column !important;
+}
+
+/* Card container adjustments */
+.card-container {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+    width: 100% !important;
+}
+
+/* Footer styles */
+.footer {
+    position: fixed; /* Fixed position */
+    left: 0;
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+    background-color: #fff; /* Footer background */
+    color: #333; /* Footer text color */
+    text-align: center; /* Center the text */
+    padding: 1rem 0; /* Padding for top and bottom */
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1); /* Shadow at the top of the footer */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Typography */
+  }
+  
+  .card img{
+    width: 100% !important;
+  }
+
+
+  
+/* Responsive adjustments for cards on larger screens */
+@media (min-width: 768px) {
+    .card {
+        flex-basis: 40% !important;
+        max-width: 40% !important;
+    }
+    .card-img-top {
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+    .card-body {
+        height: 100% !important; /* Adjust height to fill the card */
+    }
+}
